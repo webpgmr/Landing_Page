@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .header-gradient {
+    background: radial-gradient(62.91% 173.33% at 74.62% 53.65%, #022281 0%, #00022B 100%);
+  }
+  .header-bg {
+    background-image: url('header-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero-bg {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 1728px) {
+    .header-minh-2xl {
+      min-height: 1041px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .header-minh-xl {
+      min-height: 780px;
+    }
+  }
+}
+
+/* Custom styles can be added below this line */
