@@ -1553,6 +1553,11 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
 .opacity-20{
   opacity: 0.2;
 }
@@ -1807,6 +1812,14 @@ video {
 
   .\32xl\:mb-6{
     margin-bottom: 1.5rem;
+  }
+
+  .\32xl\:mb-12{
+    margin-bottom: 3rem;
+  }
+
+  .\32xl\:mb-8{
+    margin-bottom: 2rem;
   }
 
   .\32xl\:h-\[232px\]{
