@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
       colors: {
         ...colors,
         'orange-btn': "#F57C00",

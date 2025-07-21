@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer utilities {
   .header-gradient {
@@ -21,6 +24,10 @@
   @media (min-width: 1728px) {
     .header-minh-2xl {
       min-height: 1041px;
+    }
+    .header-box {
+      padding-top: 346px;
+      min-width: 541px;
     }
   }
   @media (min-width: 1280px) {

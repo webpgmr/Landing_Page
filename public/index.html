@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +7,67 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Tailwind CSS Project</title>
 </head>
-
 <body class="bg-blue-50 text-gray-800">
-    <header class="w-full header-gradient header-minh-2xl flex justify-center pt-6 md:pt-8 px-20">
+    <header class="w-full header-gradient header-minh-2xl flex justify-center relative">
         <nav
-            class="absolute max-w-[95vw] md:max-w-[90vw] xl:max-w-[1440px] flex items-center justify-between bg-white rounded-none md:rounded-full py-3 md:py-4 px-4 md:px-10 shadow-lg">
-            <!-- Logo -->
-            <div class="text-xl md:text-2xl font-semibold text-gray-900 tracking-tight">
-                KV Consulting
+            class="absolute container 2xl:px-52 2xl:pt-10">
+            <div class="flex items-center justify-between bg-white rounded-none md:rounded-full py-3 md:py-4 px-4 md:px-10 shadow-lg w-full">
+                <!-- Logo -->   
+                <div class="text-xl md:text-2xl font-semibold text-gray-900 tracking-tight">
+                    KV Consulting
+                </div>
+                <!-- Desktop Nav -->
+                <ul
+                    class="font-roboto hidden md:flex items-center space-x-4 lg:space-x-6 xl:space-x-8 text-base font-medium text-gray-900">
+                    <li><a href="#" class="hover:text-blue-700 transition">Who are we</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-700 transition flex items-center">
+                            Our services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-700 transition">Why choose us</a></li>
+                    <li><a href="#" class="hover:text-blue-700 transition">Our Expertise</a></li>
+                    <li><a href="#" class="hover:text-blue-700 transition">Testimonials</a></li>
+                    <li><a href="#" class="hover:text-blue-700 transition">FAQs</a></li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="#"
+                    class="hidden md:inline-block ml-4 lg:ml-8 bg-orange-500 text-white font-semibold px-6 lg:px-8 py-2.5 lg:py-3 rounded-full shadow transition text-base">
+                    Talk to an expert <span class="ml-2">&rarr;</span>
+                </a>
+                <!-- Mobile Hamburger -->
+                <button class="md:hidden flex items-center px-2 py-1 border rounded text-gray-700 border-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
-            <!-- Desktop Nav -->
-            <ul
-                class="hidden md:flex items-center space-x-4 lg:space-x-6 xl:space-x-8 text-base font-medium text-gray-900">
-                <li><a href="#" class="hover:text-blue-700 transition">Who are we</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-blue-700 transition flex items-center">
-                        Our services
-                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                </li>
-                <li><a href="#" class="hover:text-blue-700 transition">Why choose us</a></li>
-                <li><a href="#" class="hover:text-blue-700 transition">Our Expertise</a></li>
-                <li><a href="#" class="hover:text-blue-700 transition">Testimonials</a></li>
-                <li><a href="#" class="hover:text-blue-700 transition">FAQs</a></li>
-            </ul>
-            <!-- CTA Button -->
-            <a href="#"
-                class="hidden md:inline-block ml-4 lg:ml-8 bg-orange-500 text-white font-semibold px-6 lg:px-8 py-2.5 lg:py-3 rounded-full shadow transition text-base">
-                Talk to an expert <span class="ml-2">&rarr;</span>
-            </a>
-            <!-- Mobile Hamburger -->
-            <button class="md:hidden flex items-center px-2 py-1 border rounded text-gray-700 border-gray-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
         </nav>
-
-        <div class="w-full header-bg min-h-[600px] 2xl:min-h-[1041px] flex items-center header-bg">
+        <div class="container flex items-cente pb-56">
+            <!-- Padding top need to be replaced with 346px-->
             <div
-                class="container  max-w-400 header-minh-xl xl:min-h-[780px] mx-auto px-26 py-16 flex flex-col justify-center">
-                <div class="mb-6 flex items-center space-x-4">
-                    <span class="text-white text-base font-light">We are a consulting agency</span>
-                    <span class="w-24 h-px bg-white"></span>
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path d="M5 12h14M13 6l6 6-6 6" />
+                class="header-box font-roboto header-minh-xl flex flex-col pl-52">
+                <div class="flex items-center space-x-4 mb-5">
+                    <span class="text-gray-300 text-base font-normal leading-normal">We are a consulting agency</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="181" height="13" viewBox="0 0 181 13" fill="none">
+                    <path d="M180.53 7.03033C180.823 6.73744 180.823 6.26256 180.53 5.96967L175.757 1.1967C175.464 0.903806 174.99 0.903806 174.697 1.1967C174.404 1.48959 174.404 1.96447 174.697 2.25736L178.939 6.5L174.697 10.7426C174.404 11.0355 174.404 11.5104 174.697 11.8033C174.99 12.0962 175.464 12.0962 175.757 11.8033L180.53 7.03033ZM0 6.5V7.25H180V6.5V5.75H0V6.5Z" fill="#EBEBEB"/>
                     </svg>
                 </div>
-                <h1 class="text-white text-4xl 2xl:text-6xl font-bold leading-tight mb-6">
-                    Empowering your<br>
-                    business to focus on<br>
-                    what matters most
+                <h1 class="text-white text-6xl font-normal leading-normal mb-8 max-w-xl">
+                    Empowering your business to focus on what matters most
                 </h1>
-                <p class="text-white text-lg font-normal mb-8 max-w-xl">
+                <p class="text-gray-300 text-xl font-normal leading-normal mb-12 max-w-xl">
                     Get expert consulting to streamline operations, attract top talent, and optimise resources — so you
                     can
                     focus on growth.
                 </p>
                 <div>
                     <button
-                        class="text-left bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-full shadow transition text-base w-fit">
+                        class="bg-orange-500 hover:bg-orange-500 rounded-full shadow transition text-base w-[136px] h-[48px] text-white leading-normal font-base px-6 py-3.5">
                         Get Started
                     </button>
                 </div>
@@ -80,23 +76,23 @@
         </div>
     </header>
     <main class="w-full">
-        <section class="w-full py-20 px-20 flex items-center justify-center min-h-[700px] 2xl:min-h-[900px]">
+        <section class="w-full flex items-center justify-center min-h-[700px] 2xl:min-h-[900px]">
             <div
-                class="container mx-auto max-w-[1320px] flex flex-col lg:flex-row items-center justify-between gap-20 px-4 py-20">
+                class="container flex flex-row items-center 2xl:px-52 2xl:py-56 align-top">
                 <!-- Left: Images and Team Activity Card -->
-                <div class="relative flex-shrink-0 flex-2 ml-20">
+                <div class="relative flex flex-col flex-basis-1/2 ">
                     <!-- Main Group Image -->
                     <div
-                        class="rounded-3xl overflow-hidden shadow-xl border-4 border-white w-[370px] h-[270px] lg:w-[420px] lg:h-[320px]">
+                        class="rounded-[36px] overflow-hidden shadow-xl border-4 border-white w-[496px] h-[420px]">
                         <img src="team-meeting.jpg" alt="Team meeting" class="object-cover w-full h-full">
                     </div>
                     <!-- Top Image -->
                     <div
-                        class="absolute -top-16 -left-10 rounded-2xl overflow-hidden shadow-lg border-4 border-white w-[220px] h-[120px]">
+                        class="absolute -top-16 -left-10 rounded-tl-[36px] rounded-br-[36px] overflow-hidden shadow-lg border-4 border-white w-[338px] h-[199px]">
                         <img src="presentation.jpg" alt="Presentation" class="object-cover w-full h-full">
                     </div>
                     <!-- Team Activity Card -->
-                    <div class="absolute -bottom-1/4 -right-20 bg-white rounded-2xl shadow-lg px-3 py-3 w-[230px]">
+                    <div class="absolute -bottom-1/4 -right-24 bg-white rounded-2xl shadow-lg px-3 py-3 w-[234px] h-[267px]">
                         <div class="font-semibold text-gray-800 mb-4 text-base">Team activity</div>
                         <ul class="space-y-4">
                             <li class="flex items-center space-x-3">
@@ -128,24 +124,24 @@
                     </div>
                 </div>
                 <!-- Right: Text Content -->
-                <div class="flex-2 flex flex-col items-start justify-center mt-24 lg:mt-0">
+                <div class="flex flex-col flex-basis-1/2 align-top items-start justify-center ml-[185px] -mt-16">
                     <span
-                        class="inline-block bg-blue-500 text-white font-medium rounded-full px-5 py-1 mb-4 shadow text-sm">Who
+                        class="inline-block bg-blue-500 text-xs text-white font-normal rounded-full px-3 py-1 mb-6 shadow">Who
                         are we</span>
-                    <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-6 leading-tight">Your growth, our mission
+                    <h2 class="text-gray-900 text-6xl font-normal mb-6 leading-normal mb-10">Your growth, our mission
                     </h2>
-                    <p class="text-gray-700 text-lg mb-4 max-w-xl">
+                    <p class="text-gray-800 text-xl	font-normal leading-normal mb-4 max-w-xl">
                         At <span class="font-semibold text-gray-900">KV Consulting</span>, our mission is to simplify
                         your operational challenges so you can concentrate on scaling your business.
                     </p>
-                    <p class="text-gray-700 text-lg mb-8 max-w-xl">
+                    <p class="text-gray-800 text-xl	font-normal leading-normal mb-10 max-w-xl">
                         With years of industry experience, our team delivers personalised strategies tailored to your
                         unique needs – combining deep expertise with a commitment to accuracy, efficiency, and client
                         success.
                     </p>
                     <div>
                         <button
-                            class="bg-orange-500 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-full shadow transition text-base">
+                            class="bg-orange-500 hover:bg-orange-700 text-white font-normal px-6 py-3.5 rounded-full shadow transition text-base">
                             Know more
                         </button>
                     </div>
@@ -153,19 +149,19 @@
                 </div>
             </div>
         </section>
-        <section class="w-full bg-blue-200 py-20 px-20">
-            <div class="container max-w-[1320px] mx-auto px-4 py-20">
+        <section class="w-full bg-blue-200">
+            <div class="container font-roboto mx-auto 2xl:px-52 2xl:py-56">
                 <!-- Section Header -->
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
                     <div>
                         <span
-                            class="inline-block bg-blue-500 text-white font-medium rounded-full px-5 py-1 mb-4 shadow text-sm">Our
+                            class="inline-block bg-blue-500 text-white font-normal rounded-full px-3 py-1 mb-6 shadow text-xs justify-center">Our
                             services</span>
-                        <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-4 leading-tight">
-                            Solutions that<br>move you forward
+                        <h2 class="text-gray-900 2xl:text-6xl max-w-lg font-bold mb-20 leading-normal">
+                            Solutions that move you forward
                         </h2>
                     </div>
-                    <p class="text-gray-700 text-lg max-w-xl md:ml-8">
+                    <p class="text-gray-900 text-xl font-normal max-w-xl md:ml-8 mb-28">
                         From payroll precision to smarter recruiting, inventory optimization, and inspiring
                         workspaces—discover how our services drive measurable results for your business
                     </p>
@@ -173,10 +169,10 @@
                 <!-- Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
                     <!-- Payroll Services -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <div class="w-12 h-12 rounded-full bg-green-300 flex items-center justify-center mb-6">
+                    <div class="bg-white rounded-2xl shadow px-6 py-10  flex flex-col h-full">
+                        <div class="w-16 h-16 p-3.5 rounded-full bg-green-300 flex items-center justify-center mb-6">
                             <!-- Payroll Icon -->
-                            <svg class=text-green-700" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            <svg class="text-green-700" width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="30" height="30" fill="url(#pattern0_888_1784)" />
                                 <defs>
@@ -189,125 +185,115 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Payroll Services</h3>
-                        <p class="text-gray-700 text-sm mb-6 flex-1">
+                        <h3 class="font-semibold text-xl text-gray-900 mb-4">Payroll Services</h3>
+                        <p class="text-gray-700 text-base font-normal  mb-6 flex-1">
                             Accurate, timely payroll processing that saves you time and reduces costly errors – ensuring
                             your employees are paid right, every time.
                         </p>
-                        <a href="#" class="text-blue-600 font-medium text-sm flex items-center hover:underline">
-                            Learn more <span class="ml-1">&rarr;</span>
+                        <a href="#" class="text-blue-500 font-medium text-base flex items-center hover:underline">
+                            Learn more &nbsp;
+                            <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33301 2.66675L10.333 7.66675L5.33301 12.6667" stroke="#0B72F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
                         </a>
                     </div>
                     <!-- Recruiting Solutions -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <div class="w-12 h-12 rounded-full bg-orange-200 flex items-center justify-center mb-6">
+                    <div class="bg-white rounded-2xl shadow px-6 py-10 flex flex-col h-full">
+                        <div class="w-16 h-16 p-3.5 rounded-full bg-orange-300 flex items-center justify-center mb-6">
                             <!-- Recruiting Icon -->
-                            <svg class="text-orange-500" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
-                                    fill="#FFB191" />
-                                <rect x="15" y="15" width="30" height="30" fill="url(#pattern0_888_1792)" />
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_888_1793)"/>
                                 <defs>
-                                    <pattern id="pattern0_888_1792" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_888_1792" transform="scale(0.0078125)" />
-                                    </pattern>
-                                    <image id="image0_888_1792" width="128" height="128" preserveAspectRatio="none"
-                                        xlink:href="data:image/png;base64,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" />
+                                <pattern id="pattern0_888_1793" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_888_1793" transform="scale(0.0078125)"/>
+                                </pattern>
+                                <image id="image0_888_1793" width="128" height="128" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
                                 </defs>
                             </svg>
-
                         </div>
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Recruiting Solutions</h3>
-                        <p class="text-gray-700 text-sm mb-6 flex-1">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-4">Recruiting Solutions</h3>
+                        <p class="text-gray-700 text-sm font-normal mb-6 flex-1">
                             Find and hire the right talent faster with our tailored recruiting strategies designed to
                             match your company culture and growth goals
                         </p>
                         <a href="#" class="text-blue-600 font-medium text-sm flex items-center hover:underline">
-                            Learn more <span class="ml-1">&rarr;</span>
+                            Learn more &nbsp;
+                            <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33301 2.66675L10.333 7.66675L5.33301 12.6667" stroke="#0B72F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
                         </a>
                     </div>
                     <!-- Inventory Management -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <div class="w-12 h-12 rounded-full bg-yellow-200 flex items-center justify-center mb-6">
+                    <div class="bg-white rounded-2xl shadow px-6 py-10 flex flex-col h-full">
+                        <div class="w-16 h-16 p-3.5 rounded-full bg-yellow-300 flex items-center justify-center mb-6">
                             <!-- Inventory Icon -->
-
-                            <svg class="text-yellow-600" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
-                                    fill="#FFE48D" />
-                                <rect x="15" y="15" width="30" height="30" fill="url(#pattern0_888_1801)" />
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_888_1802)"/>
                                 <defs>
-                                    <pattern id="pattern0_888_1801" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_888_1801" transform="scale(0.0078125)" />
-                                    </pattern>
-                                    <image id="image0_888_1801" width="128" height="128" preserveAspectRatio="none"
-                                        xlink:href="data:image/png;base64,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" />
+                                <pattern id="pattern0_888_1802" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_888_1802" transform="scale(0.0078125)"/>
+                                </pattern>
+                                <image id="image0_888_1802" width="128" height="128" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
                                 </defs>
                             </svg>
-
                         </div>
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Inventory Management</h3>
-                        <p class="text-gray-700 text-sm mb-6 flex-1">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-4">Inventory Management</h3>
+                        <p class="text-gray-700 text-sm font-normal mb-6 flex-1">
                             Optimise your inventory tracking and control to reduce costs, improve accuracy, and enhance
                             supply chain efficiency
                         </p>
-                        <a href="#" class="text-blue-600 font-medium text-sm flex items-center hover:underline">
-                            Learn more <span class="ml-1">&rarr;</span>
+                        <a href="#" class="text-blue-500 font-medium text-base flex items-center hover:underline">
+                            Learn more &nbsp;
+                            <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33301 2.66675L10.333 7.66675L5.33301 12.6667" stroke="#0B72F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
                         </a>
                     </div>
                     <!-- Office Space Solutions -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center mb-6">
+                    <div class="bg-white rounded-2xl shadow px-6 py-10 flex flex-col h-full">
+                        <div class="w-16 h-16 p-3.5 rounded-full bg-red-200 flex items-center justify-center mb-6">
                             <!-- Office Icon -->
-                            <svg class="text-pink-500" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
-                                    fill="#FFA7A5" />
-                                <rect x="15" y="15" width="30" height="30" fill="url(#pattern0_888_1810)" />
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_888_1811)"/>
                                 <defs>
-                                    <pattern id="pattern0_888_1810" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_888_1810" transform="scale(0.0078125)" />
-                                    </pattern>
-                                    <image id="image0_888_1810" width="128" height="128" preserveAspectRatio="none"
-                                        xlink:href="data:image/png;base64,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" />
+                                <pattern id="pattern0_888_1811" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_888_1811" transform="scale(0.0078125)"/>
+                                </pattern>
+                                <image id="image0_888_1811" width="128" height="128" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
                                 </defs>
                             </svg>
-
                         </div>
-                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Office Space Solutions</h3>
-                        <p class="text-gray-700 text-sm mb-6 flex-1">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-4">Office Space Solutions</h3>
+                        <p class="text-gray-700 text-sm font-normalmb-6 flex-1">
                             Flexible, cost-effective office space consulting to help you find, design, and manage
                             workspaces that boost productivity and employee satisfaction.
                         </p>
-                        <a href="#" class="text-blue-600 font-medium text-sm flex items-center hover:underline">
-                            Learn more <span class="ml-1">&rarr;</span>
+                        <a href="#" class="text-blue-500 font-medium text-base flex items-center hover:underline">
+                            Learn more &nbsp;
+                            <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33301 2.66675L10.333 7.66675L5.33301 12.6667" stroke="#0B72F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="w-full py-20 px-20">
+        <section class="w-full">
             <div
-                class="container max-w-[1320px] mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start gap-12 py-20">
+                class="container mx-auto px-4 flex flex-row items-center gap-12 2xl:px-52 2xl:py-56">
                 <!-- Left: Text Content -->
                 <div class="flex-1 max-w-xl">
                     <span
-                        class="inline-block bg-blue-500 text-white font-medium rounded-full px-5 py-1 mb-4 shadow text-sm">Why
+                        class="inline-block bg-blue-500 text-white font-medium rounded-full px-3 py-1 mb-6 shadow text-xs">Why
                         choose us</span>
-                    <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                    <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-4 leading-normal">
                         The edge your<br>business deserves
                     </h2>
-                    <p class="text-gray-700 text-base mb-8">
+                    <p class="text-gray-700 text-xl mb-10">
                         It’s not just about what we do—it’s how we do it: proactive support, clear communication, and a
                         genuine commitment to your goals
                     </p>
-                    <ul class="space-y-6 mb-10">
+                    <ul class="mb-16">
                         <li class="flex items-start">
                             <span class="mt-1 mr-3 text-green-500 rounded-full  bg-green-500">
                                 <svg class="w-6 h-6" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -318,8 +304,8 @@
 
 
                             <div>
-                                <div class="font-semibold text-gray-900">More time for what matters</div>
-                                <div class="text-gray-600 text-sm">With our support, your team can shift focus from
+                                <div class="font-semibold text-gray-900 text-xl mb-3">More time for what matters</div>
+                                <div class="text-gray-800 text-base mb-10">With our support, your team can shift focus from
                                     daily admin to strategic growth and innovation</div>
                             </div>
                         </li>
@@ -331,8 +317,8 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg> </span>
                             <div>
-                                <div class="font-semibold text-gray-900">Confidence in every decision</div>
-                                <div class="text-gray-600 text-sm">Rely on accurate data, industry insights, and best
+                                <div class="font-semibold text-gray-900 text-xl mb-3">Confidence in every decision</div>
+                                <div class="text-gray-800 text-base mb-10">Rely on accurate data, industry insights, and best
                                     practices that empower smarter business moves</div>
                             </div>
                         </li>
@@ -344,8 +330,8 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg> </span>
                             <div>
-                                <div class="font-semibold text-gray-900">Seamless operations, every day</div>
-                                <div class="text-gray-600 text-sm">Enjoy smooth, hassle-free processes that keep your
+                                <div class="font-semibold text-gray-900 text-xl mb-3">Seamless operations, every day</div>
+                                <div class="text-gray-800 text-base mb-10">Enjoy smooth, hassle-free processes that keep your
                                     business running efficiently—no more bottlenecks or surprises</div>
                             </div>
                         </li>
@@ -357,101 +343,99 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg> </span>
                             <div>
-                                <div class="font-semibold text-gray-900">A partner who grows with you</div>
-                                <div class="text-gray-600 text-sm">We’re invested in your long-term success, adapting
+                                <div class="font-semibold text-gray-900 text-xl mb-3">A partner who grows with you</div>
+                                <div class="text-gray-800 text-base">We’re invested in your long-term success, adapting
                                     our solutions as your business evolves</div>
                             </div>
                         </li>
                     </ul>
                     <button
-                        class="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-full shadow transition text-base">
+                        class="bg-orange-500 hover:bg-orange-500 text-white font-bold px-6 py-3.5 rounded-full shadow transition text-base">
                         Reach out to us
                     </button>
                 </div>
                 <!-- Right: Image and Cards -->
-                <div class="flex-1 flex flex-col items-center relative">
+                <div class="flex-1 flex flex-col pl-20 relative">
                     <!-- Main Image -->
                     <div
-                        class="rounded-3xl overflow-hidden shadow-xl border-4 border-white w-[370px] h-[300px] lg:w-[420px] lg:h-[340px] relative">
-                        <img src="business-edge.jpg" alt="Business handshake" class="object-cover w-full h-full">
-                        <div
-                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                            iStock<br>
-                            <span class="font-normal text-xs">Credit: AJ_Watt</span>
-                        </div>
+                        class="rounded-tl-[80px] rounded-br-[80px] rounded-tr-[12px] rounded-bl-[12px] overflow-hidden shadow-xl border-8 border-white  2xl:w-[632px] 2xl:h-[648px] relative">
+                        <img src="business-edge.jpg" alt="Business handshake" class="object-cover">
+                        
                     </div>
                     <!-- Top Right Card -->
-                    <div class="absolute top-1/4 right-10 bg-white rounded-2xl shadow-lg px-3 py-3 w-[200px]">
+                    <div class="absolute 2xl:top-[210px] 2xl:left-[617px] right-10 bg-white rounded-2xl shadow-lg p-4 2xl:w-[219px] 2xl:h-[200px]">
                         <ul class="space-y-4">
                             <li class="flex items-center">
-                                <span class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
-                                    <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor"
-                                        stroke-width="2" viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" />
-                                        <path d="M12 8v4l3 3" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" />
+                                <span class="w-10 h-10 rounded-full bg-yellow-300 flex items-center justify-center mr-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" stroke="#8F7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 8.25L12 16.5" stroke="#8F7800" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M16.125 12.375L7.875 12.375" stroke="#8F7800" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>
                                 </span>
                                 <div>
                                     <div class="font-medium text-gray-900 text-sm">Create Contacts</div>
-                                    <div class="text-xs text-gray-500">800+ contacts</div>
+                                    <div class="text-xs text-gray-700">800+ contacts</div>
                                 </div>
                             </li>
                             <li class="flex items-center">
-                                <span class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center mr-3">
-                                    <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor"
-                                        stroke-width="2" viewBox="0 0 24 24">
-                                        <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" />
-                                        <path d="M9 9h6v6H9z" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" />
+                                <span class="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center mr-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="4.5" width="18" height="13.5" rx="2.25" stroke="#C36100" stroke-width="1.5"/>
+                                    <path d="M15 21H9" stroke="#C36100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 14.25H21" stroke="#C36100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 18V21" stroke="#C36100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
+
                                 </span>
                                 <div>
                                     <div class="font-medium text-gray-900 text-sm">Add Equipment</div>
-                                    <div class="text-xs text-gray-500">10 equipments</div>
+                                    <div class="text-xs text-gray-700">10 equipments</div>
                                 </div>
                             </li>
                             <li class="flex items-center">
-                                <span class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                                    <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor"
-                                        stroke-width="2" viewBox="0 0 24 24">
-                                        <path d="M12 6v6l4 2" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" />
+                                <span class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 15.75C13.6569 15.75 15 14.4069 15 12.75C15 11.0931 13.6569 9.75 12 9.75C10.3431 9.75 9 11.0931 9 12.75C9 14.4069 10.3431 15.75 12 15.75Z" stroke="#005CBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 17.9998C8.02403 17.3013 8.70348 16.7343 9.48455 16.3438C10.2656 15.9533 11.1269 15.75 12.0001 15.75C12.8734 15.75 13.7346 15.9532 14.5157 16.3437C15.2968 16.7342 15.9763 17.3011 16.5004 17.9996" stroke="#005CBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 6H15" stroke="#005CBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.25 19.5V5.25C20.25 4.00736 19.2426 3 18 3H6C4.75736 3 3.75 4.00736 3.75 5.25V19.5C3.75 20.7426 4.75736 21.75 6 21.75H18C19.2426 21.75 20.25 20.7426 20.25 19.5Z" stroke="#005CBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </span>
                                 <div>
                                     <div class="font-medium text-gray-900 text-sm">Team Settings</div>
-                                    <div class="text-xs text-gray-500">20+ Teams</div>
+                                    <div class="text-xs text-gray-700">20+ Teams</div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <!-- Bottom Card: Employment Status -->
                     <div
-                        class="absolute -bottom-10 left-20 -translate-x-1/2 bg-white rounded-2xl shadow-lg px-6 py-5 w-[240px]">
-                        <div class="font-semibold text-gray-800 mb-3 text-sm">Employment Status</div>
+                        class="absolute 2xl:top-[520px] 2xl:right-[210px] -translate-x-1/2 bg-white rounded-2xl shadow-lg p-4 2xl:w-[350px] 2xl:h-[232px]">
+                        <div class="font-bold text-gray-800 mb-4 ml-2 text-base">Employment Status</div>
+                        <div class="border-gray-200 border-1 mb-4"></div>
                         <div class="flex items-center w-full">
-                            <div class="flex flex-col space-y-2 mr-4">
+                            <div class="flex flex-col space-y-6 mr-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 rounded-full bg-orange-400 inline-block"></span>
-                                    <span class="text-xs text-gray-700">Permanent</span>
+                                    <span class="w-4 h-4 rounded-full bg-orange-400 inline-block "></span>
+                                    <span class="text-sm text-gray-800">Permanent</span>
                                 </div>
                                 <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span>
-                                    <span class="text-xs text-gray-700">Part-time</span>
+                                    <span class="w-4 h-4 rounded-full bg-yellow-400 inline-block"></span>
+                                    <span class="text-sm text-gray-800">Part-time</span>
                                 </div>
                                 <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 rounded-full bg-blue-400 inline-block"></span>
-                                    <span class="text-xs text-gray-700">Contract</span>
+                                    <span class="w-4 h-4 rounded-full bg-blue-400 inline-block"></span>
+                                    <span class="text-sm text-gray-800">Contract</span>
                                 </div>
                                 <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 rounded-full bg-gray-300 inline-block"></span>
-                                    <span class="text-xs text-gray-700">Probation</span>
+                                    <span class="w-4 h-4 rounded-full bg-gray-400 inline-block"></span>
+                                    <span class="text-sm text-gray-800">Probation</span>
                                 </div>
                             </div>
                             <!-- Donut Chart SVG -->
-                            <div class="relative w-24 h-24 flex items-center justify-center">
+
+                            <div class="relative 2xl:w-36 2xl:h-36 flex items-center justify-center">
                                 <svg width="96" height="96" viewBox="0 0 96 96">
                                     <!-- Background circle -->
                                     <circle cx="48" cy="48" r="40" fill="none" stroke="#F3F4F6" stroke-width="12" />
@@ -476,30 +460,31 @@
                                     <span class="text-xs text-gray-500">Total Employees</span>
                                 </div>
                             </div>
+                            
                         </div>
 
                     </div>
                 </div>
             </div>
         </section>
-        <section class="w-full bg-white py-20 px-20">
-            <div class="container max-w-[1100px] mx-auto px-4 flex flex-col items-center py-20">
+        <section class="w-full bg-white">
+            <div class="container font-roboto mx-auto flex flex-col items-center 2xl:px-52 2xl:py-56">
                 <!-- Section Header -->
                 <span
-                    class="inline-block bg-blue-500 text-white font-medium rounded-full px-5 py-1 mb-4 shadow text-sm">Our
+                    class="inline-block bg-blue-500 text-gray-100 font-medium rounded-full px-3 py-1 mb-6 shadow text-xs">Our
                     domain expertise</span>
-                <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-4 text-center leading-tight">
+                <h2 class="text-gray-900 text-6xl font-bold mb-4 text-center leading-tight 2xl:max-w-[917px]">
                     Industries we work with
                 </h2>
-                <p class="text-gray-600 text-lg mb-12 text-center max-w-2xl">
+                <p class="text-gray-700 text-xl mb-20 text-center 2xl:max-w-[917px]">
                     Whether you’re building a team from scratch or you need help closing that one hard-to-fill position,
                     we’ve done it before.
                 </p>
                 <!-- Industries Grid -->
-                <div class="w-full flex flex-wrap justify-center gap-x-12 gap-y-8 px-20 2xl:px-60">
+                <div class="w-full flex flex-wrap justify-center gap-x-12 gap-y-8 px-20">
                     <!-- Web3 -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-yellow-300 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-yellow-300 flex items-center justify-center">
                             <!-- Laptop Icon -->
                             <svg class="text-yellow-900" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -514,7 +499,7 @@
                             </svg>
 
                         </span>
-                        <span class="text-lg font-medium text-gray-900">Web3</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">Web3</span>
                     </div>
                     <!-- AI & Machine Learning -->
                     <div class="flex items-center space-x-3">
@@ -530,11 +515,11 @@
 
                             </span>
                         </span>
-                        <span class="text-lg font-medium text-gray-900">AI &amp; Machine Learning</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">AI &amp; Machine Learning</span>
                     </div>
                     <!-- Fintech -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-blue-200 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-blue-200 flex items-center justify-center">
                             <!-- Card Icon -->
                             <svg class="text-blue-700" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -550,11 +535,11 @@
 
 
                         </span>
-                        <span class="text-lg font-medium text-gray-900">Fintech</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">Fintech</span>
                     </div>
                     <!-- Cloud Computing -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-orange-200 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-orange-200 flex items-center justify-center">
                             <!-- Cloud Check Icon -->
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -568,11 +553,11 @@
                             </svg>
 
                         </span>
-                        <span class="text-lg font-medium text-gray-900">Cloud Computing</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">Cloud Computing</span>
                     </div>
                     <!-- E-commerce & Retail -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-pink-200 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-pink-200 flex items-center justify-center">
                             <!-- Cart Icon -->
                             <svg class="text-pink-600" width="60" height="60" viewBox="0 0 60 60" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -589,11 +574,11 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </span>
-                        <span class="text-lg font-medium text-gray-900">E-commerce &amp; Retail</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">E-commerce &amp; Retail</span>
                     </div>
                     <!-- Gaming, VR & AR -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-yellow-300 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-yellow-300 flex items-center justify-center">
                             <!-- Gamepad Icon -->
 
                             <svg class="text-yellow-900" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -615,11 +600,11 @@
 
 
                         </span>
-                        <span class="text-lg font-medium text-gray-900">Gaming, VR &amp; AR</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">Gaming, VR &amp; AR</span>
                     </div>
                     <!-- Cybersecurity -->
                     <div class="flex items-center space-x-3">
-                        <span class="w-14 h-14 rounded-full bg-blue-200 flex items-center justify-center">
+                        <span class="w-16 h-16 rounded-full bg-blue-200 flex items-center justify-center">
                             <!-- Shield Icon -->
 
                             <svg class="text-blue-700" width="60" height="60" viewBox="0 0 60 60" fill="none"
@@ -637,29 +622,29 @@
 
 
                         </span>
-                        <span class="text-lg font-medium text-gray-900">Cybersecurity</span>
+                        <span class="2xl:text-2xl font-normal text-gray-900">Cybersecurity</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="w-full py-20 px-20">
-            <div class="container max-w-[1100px] mx-auto px-4 flex flex-col items-center py-20">
+        <section class="w-full">
+            <div class="container font-roboto mx-auto flex flex-col items-center 2xl:px-52 2xl:py-56">
                 <!-- Section Header -->
                 <span
-                    class="inline-block bg-blue-500 text-white font-medium rounded-full px-5 py-1 mb-4 shadow text-sm">What
+                    class="inline-block bg-blue-500 text-gray-100 font-medium rounded-full px-3 py-1 mb-4 shadow text-xs">What
                     our clients say</span>
-                <h2 class="text-gray-900 text-3xl md:text-5xl font-bold mb-4 text-center leading-tight">
+                <h2 class="text-gray-900 2xl:text-6xl font-bold mb-4 text-center leading-tight">
                     Built on trust, proven by results
                 </h2>
-                <p class="text-gray-600 text-base mb-12 text-center max-w-2xl">
+                <p class="text-gray-700 text-xl mb-20 text-center 2xl:max-w-xl">
                     Join leading companies who rely on our certified experts.<br>
-                    See what our clients say and know your data is always protected
+                    See what our clients say and know your data is always protected.
                 </p>
                 <!-- Testimonials Grid -->
-                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="w-full grid 2xl:grid-cols-2 gap-8">
                     <!-- Testimonial 1 -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <p class="text-gray-700 text-base mb-6 flex-1">
+                    <div class="bg-white 2xl:rounded-[40px] shadow p-16 flex flex-col h-full 2xl:max-w-[632px]">
+                        <p class="text-gray-900 text-xl font-normal mb-10 flex-1 2xl:max-w-lg">
                             KV consulting transformed our payroll and recruiting processes — saving us time and
                             improving accuracy. Before partnering with them, our payroll system was prone to delays and
                             errors, and our recruitment efforts often missed the mark. Their team took the time to
@@ -667,81 +652,69 @@
                             to use
                         </p>
                         <div class="flex items-center mt-4">
-                            <img src="avatar1.png" alt="Mary Jane" class="w-10 h-10 rounded-full object-cover mr-3">
+                            <img src="avatar1.png" alt="Mary Jane" class="w-16 h-16 rounded-full object-cover mr-3">
                             <div>
-                                <div class="font-semibold text-gray-900 text-sm">Mary Jane</div>
-                                <div class="text-xs text-gray-500">HR Manager, XYZ Corporation</div>
+                                <div class="font-normal text-gray-900 2xl:text-2xl">Mary Jane</div>
+                                <div class="text-base text-gray-900">HR Manager, XYZ Corporation</div>
                             </div>
                         </div>
                     </div>
                     <!-- Testimonial 2 -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <p class="text-gray-700 text-base mb-6 flex-1">
+                    <div class="bg-white 2xl:rounded-[40px] shadow p-16 flex flex-col h-full 2xl:max-w-[632px]">
+                        <p class="text-gray-900 text-xl font-normal mb-10 flex-1 2xl:max-w-lg">
                             KV Consulting has transformed our payroll and recruitment processes, saving us time and
                             enhancing accuracy. Before we partnered with them, our payroll was often delayed and
                             error-prone, and our recruitment efforts missed the target. Their team took the time to
                             understand our challenges and implemented effective, user-friendly solutions.
                         </p>
                         <div class="flex items-center mt-4">
-                            <img src="avatar2.png" alt="Mary Jane" class="w-10 h-10 rounded-full object-cover mr-3">
+                            <img src="avatar2.png" alt="Mary Jane" class="w-16 h-16 rounded-full object-cover mr-3">
                             <div>
-                                <div class="font-semibold text-gray-900 text-sm">Mary Jane</div>
-                                <div class="text-xs text-gray-500">HR Manager, XYZ Corporation</div>
+                                <div class="font-normal text-gray-900 2xl:text-2xl">Mary Jane</div>
+                                <div class="text-base text-gray-900">HR Manager, XYZ Corporation</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white rounded-2xl shadow p-8 flex flex-col h-full">
-                        <p class="text-gray-700 text-base mb-6 flex-1">
-                            KV Consulting has improved our recruitment systems, increasing efficiency and accuracy. We
-                            previously faced frequent issues with payroll processing, and their team provided tailored
-                            solutions that made a real difference.
-                        </p>
-                        <div class="flex items-center mt-4">
-                            <img src="avatar3.png" alt="Mary Jane" class="w-10 h-10 rounded-full object-cover mr-3">
-                            <div>
-                                <div class="font-semibold text-gray-900 text-sm">Mary Jane</div>
-                                <div class="text-xs text-gray-500">HR Manager, XYZ Corporation</div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="w-full py-20 px-20">
-            <div class="container max-w-4xl mx-auto px-4">
+             <!-- CTA Section -->
+            <div class="container font-roboto flex flex-col mx-auto items-center 2xl:px-52 2xl:pb-56">
                 <div
-                    class="hero-bg bg-gradient-to-br from-[#022281] to-[#00022B] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+                    class="2xl:w-[1312px] bg-gradient-to-br from-[#022281] to-[#00022B] 2xl:rounded-3xl 2xl:px-[70px] 2xl:py-20 flex flex-row items-center justify-between relative overflow-hidden ">
                     <!-- Left: Text and Button -->
-                    <div class="flex-1 z-10">
-                        <h3 class="text-white text-2xl md:text-3xl font-bold mb-4">Let’s transform your<br>business
+                    <div class="flex-1">
+                        <h3 class="text-gray-100 font-semibold 2xl:text-[40px] 2xl:max-w-96 mb-4">Let’s transform your business
                             together</h3>
-                        <p class="text-white text-base mb-6 max-w-md">
+                        <p class="text-gray-100 2xl:text-2xl font-normal 2xl:mb-11">
                             Ready to get started? Reach out for a free consultation your journey to simpler, smarter
                             operations begins here
                         </p>
                         <a href="#"
-                            class="bg-orange-400 hover:bg-orange-500 text-white font-semibold px-7 py-3 rounded-full shadow transition text-base inline-block">
-                            Talk to an expert &rarr;
+                            class="bg-orange-400 hover:bg-orange-500 text-gray-100 font-base px-5 py-3.5 rounded-full shadow transition inline-block">
+                            Talk to an expert <svg class="inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.33301 2.6665L10.333 7.66651L5.33301 12.6665" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
+                    </div>
+                    <div class="flex-1">
+                        <img src="cta-image.png" alt="CTA Image" class="w-full h-auto object-cover">
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="w-full py-20 px-20">
-            <div class="container max-w-3xl mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Frequently asked questions</h2>
+            <!-- FAQ Accordion -->
+             <div class="container font-roboto mx-auto 2xl:px-52 2xl:pb-56">
+                <h2 class="text-4xl 2xl:text-6xl text-gray-900 font-bold text-center mb-20">Frequently asked questions</h2>
                 <div class="space-y-4">
-                    <!-- FAQ Accordion -->
-                    <div x-data="{ open: 0 }" class="divide-y divide-gray-200">
+                    
+                    <div x-data="{ open: 0 }">
                         <!-- FAQ 1 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 1 ? open = 0 : open = 1"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">What types of businesses do you work
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">What types of businesses do you work
                                     with?</span>
                                 <svg :class="open === 1 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -750,17 +723,17 @@
                                 </svg>
                             </button>
                             <div x-show="open === 1" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     We partner with organizations of all sizes—from startups to large enterprises—across
                                     a variety of industries to streamline operations and support growth.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 2 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 2 ? open = 0 : open = 2"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">How do you tailor your solutions to each
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">How do you tailor your solutions to each
                                     client?</span>
                                 <svg :class="open === 2 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -769,17 +742,17 @@
                                 </svg>
                             </button>
                             <div x-show="open === 2" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Every business is unique. We begin with a thorough assessment of your needs and
                                     goals, then customize our strategies and tools to fit your specific requirements.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 3 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 3 ? open = 0 : open = 3"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">How do you ensure we attract the right
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">How do you ensure we attract the right
                                     talent with your recruiting services?</span>
                                 <svg :class="open === 3 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -788,17 +761,17 @@
                                 </svg>
                             </button>
                             <div x-show="open === 3" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Our recruiting team leverages proven sourcing strategies, industry insights, and a
                                     deep understanding of your company culture to identify and secure top candidates.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 4 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 4 ? open = 0 : open = 4"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">Can you help us optimize our inventory
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">Can you help us optimize our inventory
                                     even if we use legacy systems?</span>
                                 <svg :class="open === 4 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -807,17 +780,17 @@
                                 </svg>
                             </button>
                             <div x-show="open === 4" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Absolutely. We work with a wide range of inventory systems and can recommend
                                     improvements or integrations to boost accuracy and efficiency.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 5 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 5 ? open = 0 : open = 5"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">What’s included in your office space
+                                class="w-full flex items-center justify-between  text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">What’s included in your office space
                                     solutions?</span>
                                 <svg :class="open === 5 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -826,7 +799,7 @@
                                 </svg>
                             </button>
                             <div x-show="open === 5" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     We assist with workspace planning, site selection, design recommendations, and
                                     ongoing management to ensure your office supports productivity and employee
                                     well-being.
@@ -834,10 +807,10 @@
                             </div>
                         </div>
                         <!-- FAQ 6 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 6 ? open = 0 : open = 6"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">How do you price your consulting
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">How do you price your consulting
                                     services?</span>
                                 <svg :class="open === 6 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -846,16 +819,16 @@
                                 </svg>
                             </button>
                             <div x-show="open === 6" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Please contact us for a custom quote based on your business needs and project scope.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 7 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 7 ? open = 0 : open = 7"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">Is my business data secure with your
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">Is my business data secure with your
                                     firm?</span>
                                 <svg :class="open === 7 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -864,17 +837,17 @@
                                 </svg>
                             </button>
                             <div x-show="open === 7" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Yes, we follow strict data protection protocols and industry best practices to keep
                                     your information safe and confidential.
                                 </p>
                             </div>
                         </div>
                         <!-- FAQ 8 -->
-                        <div>
+                        <div class="mb-16">
                             <button @click="open === 8 ? open = 0 : open = 8"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">Do you offer ongoing support after the
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">Do you offer ongoing support after the
                                     initial project is complete?</span>
                                 <svg :class="open === 8 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -883,7 +856,7 @@
                                 </svg>
                             </button>
                             <div x-show="open === 8" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class="text-gray-800 text-base">
                                     Yes, we provide ongoing support and maintenance packages to ensure your continued
                                     success.
                                 </p>
@@ -892,8 +865,8 @@
                         <!-- FAQ 9 -->
                         <div>
                             <button @click="open === 9 ? open = 0 : open = 9"
-                                class="w-full flex items-center justify-between py-5 text-left focus:outline-none group">
-                                <span class="text-lg md:text-xl font-semibold">How do I get started or request a
+                                class="w-full flex items-center justify-between text-left focus:outline-none group">
+                                <span class="2xl:text-2xl 2xl:font-semibold 2xl:mb-6">How do I get started or request a
                                     consultation?</span>
                                 <svg :class="open === 9 ? 'rotate-180' : ''"
                                     class="w-6 h-6 text-gray-700 transform transition-transform duration-200"
@@ -902,7 +875,7 @@
                                 </svg>
                             </button>
                             <div x-show="open === 9" x-collapse>
-                                <p class="mt-2 text-gray-700 text-base">
+                                <p class=" text-gray-700 text-base">
                                     Simply use our contact form or click the “Talk to an expert” button to get started.
                                 </p>
                             </div>
@@ -910,21 +883,22 @@
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
-    <footer class="header-gradient [#00287A] py-10 mt-6">
-        <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between px-6">
+    <footer class="header-gradient">
+        <div class="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between 2xl:px-52 2xl:py-10">
             <!-- Left: Company Info -->
             <div>
-                <div class="text-white text-2xl font-serif font-semibold mb-2">KV Consulting Pvt. Ltd.</div>
-                <div class="text-white text-sm mb-1">&copy; 2025 KV Consulting. All rights reserved</div>
-                <div class="text-white text-sm">HSR Layout, Bengaluru</div>
+                <div class="text-white text-2xl font-serif font-semibold mb-2.5">KV Consulting Pvt. Ltd.</div>
+                <div class="font-roboto text-gray-100 text-sm mb-2.5">&copy; 2025 KV Consulting. All rights reserved</div>
+                <div class="font-roboto text-gray-100 text-sm">HSR Layout, Bengaluru</div>
             </div>
             <!-- Right: Social & Links -->
             <div
-                class="flex flex-col md:items-end md:flex-row md:space-x-12 mt-8 md:mt-0 w-full md:w-auto justify-between">
+                class="flex flex-col items-end">
                 <!-- Social Icons -->
-                <div class="flex items-center space-x-6 mb-4 md:mb-0">
+                <div class="flex items-center 2xl:space-x-6 2xl:mb-6">
                     <!-- Telegram -->
                     <a href="#" aria-label="Telegram" class="text-white hover:text-blue-300 transition">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -948,15 +922,14 @@
                     </a>
                 </div>
                 <!-- Footer Links -->
-                <div class="flex items-center space-x-4 text-white text-base">
-                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                <div class="flex items-center space-x-4 text-gray-100 text-base">
+                    <a href="#" class="font-roboto font-base hover:underline">Terms &amp; Conditions</a>
                     <span class="mx-1">&bull;</span>
-                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="font-roboto text-gray-100 font-base hover:underline">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
-
 </html>
